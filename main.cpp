@@ -1,6 +1,6 @@
 ﻿#include "Window.h"
 
-int WINAPI wWinMain(
+int APIENTRY wWinMain(
     HINSTANCE hInstance,
     HINSTANCE hPrevInstance,
     LPWSTR lpCmdLine,
@@ -9,13 +9,13 @@ int WINAPI wWinMain(
     Window window(hInstance);
 
     if (!window.Create()) {
-        MessageBoxW(nullptr, L"Error: window not created", L"Error", MB_ICONERROR);
+        MessageBoxW(nullptr, L"Ошибка создания окна", L"Ошибка", MB_ICONERROR);
         return 1;
     }
 
     window.Show(nCmdShow);
 
-    MSG msg = {};
+    MSG msg;
     while (GetMessageW(&msg, nullptr, 0, 0)) {
         TranslateMessage(&msg);
         DispatchMessageW(&msg);

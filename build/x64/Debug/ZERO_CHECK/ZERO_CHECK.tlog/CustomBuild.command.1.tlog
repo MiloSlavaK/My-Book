@@ -1,6 +1,6 @@
 ^C:\USERS\MILA\LABS\MY-BOOK\BUILD\CMAKEFILES\31FF4F0A65A17550279332C2E91AAEDF\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Mila/labs/My-Book -BC:/Users/Mila/labs/My-Book/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Mila/labs/My-Book/build/WinAPIApp.sln
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Mila/labs/My-Book -BC:/Users/Mila/labs/My-Book/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Mila/labs/My-Book/build/MyBook.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

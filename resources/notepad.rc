@@ -1,0 +1,29 @@
+#include "resources.h"
+
+IDI_APP_ICON ICON "resources/app.ico"
+
+IDM_MAIN_MENU MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "New",         IDM_FILE_NEW
+        MENUITEM "Open...",      IDM_FILE_OPEN
+        MENUITEM "Save",       IDM_FILE_SAVE
+        MENUITEM "Save as...", IDM_FILE_SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",           IDM_FILE_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "Notice",        IDM_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cut",        IDM_EDIT_CUT
+        MENUITEM "Copy",      IDM_EDIT_COPY
+        MENUITEM "Insert",        IDM_EDIT_PASTE
+        MENUITEM "Delete",         IDM_EDIT_DELETE
+    END
+    POPUP "&Inf"
+    BEGIN
+        MENUITEM "Help",     IDM_HELP_ABOUT
+    END
+END

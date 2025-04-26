@@ -1,5 +1,6 @@
 ﻿#pragma once
 #include <windows.h>
+#include <string>
 
 class Window {
 public:
@@ -8,12 +9,19 @@ public:
 
     bool Create();
     void Show(int nCmdShow);
-    HWND GetHandle() const;
 
 private:
+    void CreateControls();
+    void OpenFile();
+    void SaveFile();
+    std::wstring ShowFileDialog(bool save);
+
     static LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
 
     HINSTANCE m_hInstance;
     HWND m_hwnd;
-    const wchar_t* m_className = L"MyWindowClass";
+    HWND m_hEdit;
+    HFONT m_hFont; 
+    std::wstring m_currentFile;
+    const wchar_t* m_className = L"TextEditorClass";
 };
