@@ -1,0 +1,3 @@
+C:/Users/Mila/labs/My-Book/build/CMakeFiles/WinAPIApp.dir
+C:/Users/Mila/labs/My-Book/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Mila/labs/My-Book/build/CMakeFiles/ZERO_CHECK.dir
